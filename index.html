@@ -13,18 +13,28 @@
 <meta name="theme-color" content="#0F0F0F">
 <link rel="canonical" href="https://khoa-hoc-claude-sales.lynxsolution.vn/">
 
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Lynx Solution — Khóa học AI">
 <meta property="og:url" content="https://khoa-hoc-claude-sales.lynxsolution.vn/">
 <meta property="og:title" content="Claude 1:1 cho Sales B2B — Làm slide & kịch bản pitch trong 30 phút">
 <meta property="og:description" content="3 buổi kèm 1:1 Claude AI cho người bán giải pháp công nghệ B2B. Học phí 1.500.000đ. Hoàn 100% sau buổi 1.">
+<meta property="og:image" content="https://khoa-hoc-claude-sales.lynxsolution.vn/assets/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nguyên Lynx — Khóa Claude 1:1 cho Sales B2B">
 <meta property="og:locale" content="vi_VN">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Claude 1:1 cho Sales B2B — Nguyên Lynx @aiwithlynx">
 <meta name="twitter:description" content="3 buổi kèm 1:1 Claude AI, tự làm deck + kịch bản pitch trong 30 phút.">
+<meta name="twitter:image" content="https://khoa-hoc-claude-sales.lynxsolution.vn/assets/images/og.jpg">
+<meta name="twitter:image:alt" content="Nguyên Lynx — Khóa Claude 1:1 cho Sales B2B">
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
@@ -133,6 +143,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .hero-visual-inner {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .hero-visual-icon {
+    font-size: 64px;
+    display: block;
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+
+  .hero-visual-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   .slide-preview {
@@ -410,8 +440,13 @@
     opacity: 0.4;
   }
 
-  .session:hover { border-color: var(--accent-border); }
-  .session:hover::before { opacity: 1; }
+  .session:hover {
+    border-color: var(--accent-border);
+  }
+
+  .session:hover::before {
+    opacity: 1;
+  }
 
   .session-num {
     font-family: 'IBM Plex Mono', monospace;
@@ -421,6 +456,8 @@
     line-height: 1;
     opacity: 0.7;
   }
+
+  .session-content {}
 
   .session-tag {
     display: inline-block;
@@ -507,7 +544,10 @@
     gap: 24px;
   }
 
-  .ba-card { padding: 32px; border-radius: 12px; }
+  .ba-card {
+    padding: 32px;
+    border-radius: 12px;
+  }
 
   .ba-before {
     background: rgba(255,255,255,0.03);
@@ -531,7 +571,11 @@
   .ba-before .ba-label { color: var(--beige-muted); }
   .ba-after .ba-label { color: var(--accent); }
 
-  .ba-list { list-style: none; display: grid; gap: 12px; }
+  .ba-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+  }
 
   .ba-list li {
     font-size: 14px;
@@ -547,7 +591,10 @@
   .ba-after .ba-list li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 600; }
 
   /* ============ PRICING ============ */
-  .pricing-single { max-width: 640px; margin: 0 auto; }
+  .pricing-single {
+    max-width: 640px;
+    margin: 0 auto;
+  }
 
   .tier {
     padding: 44px 40px;
@@ -562,7 +609,8 @@
 
   .tier-flag {
     position: absolute;
-    top: -12px; right: 32px;
+    top: -12px;
+    right: 32px;
     background: var(--accent);
     color: var(--bg);
     font-family: 'IBM Plex Mono', monospace;
@@ -605,7 +653,10 @@
     letter-spacing: -0.02em;
   }
 
-  .price-unit { font-size: 15px; color: var(--beige-muted); }
+  .price-unit {
+    font-size: 15px;
+    color: var(--beige-muted);
+  }
 
   .price-full {
     font-family: 'IBM Plex Mono', monospace;
@@ -616,7 +667,12 @@
     border-bottom: 1px solid var(--line);
   }
 
-  .tier ul { list-style: none; display: grid; gap: 14px; margin-bottom: 32px; }
+  .tier ul {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
 
   .tier ul li {
     font-size: 15px;
@@ -628,7 +684,8 @@
 
   .tier ul li::before {
     content: '✓';
-    position: absolute; left: 0;
+    position: absolute;
+    left: 0;
     color: var(--accent);
     font-weight: 600;
     font-size: 16px;
@@ -678,6 +735,8 @@
     flex-wrap: wrap;
   }
 
+  .addon-info {}
+
   .addon-tag {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
@@ -688,10 +747,22 @@
     display: block;
   }
 
-  .addon-title { font-size: 17px; font-weight: 600; color: var(--cream); margin-bottom: 6px; }
-  .addon-desc { font-size: 14px; color: var(--beige); }
+  .addon-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 6px;
+  }
 
-  .addon-price { text-align: right; flex-shrink: 0; }
+  .addon-desc {
+    font-size: 14px;
+    color: var(--beige);
+  }
+
+  .addon-price {
+    text-align: right;
+    flex-shrink: 0;
+  }
 
   .addon-price-amount {
     font-family: 'IBM Plex Mono', monospace;
@@ -701,7 +772,10 @@
     display: block;
   }
 
-  .addon-price-label { font-size: 13px; color: var(--beige-muted); }
+  .addon-price-label {
+    font-size: 13px;
+    color: var(--beige-muted);
+  }
 
   /* ============ PERKS ============ */
   .perks-grid {
@@ -726,7 +800,12 @@
     margin-bottom: 10px;
   }
 
-  .perk-text { font-size: 14px; color: var(--cream); line-height: 1.55; }
+  .perk-text {
+    font-size: 14px;
+    color: var(--cream);
+    line-height: 1.55;
+  }
+
   .perk-text strong { color: var(--accent); }
 
   /* ============ INSTRUCTOR ============ */
@@ -750,15 +829,23 @@
     border-radius: 50%;
     background: linear-gradient(135deg, var(--accent), var(--beige));
     margin-bottom: 20px;
+    overflow: hidden;
     border: 2px solid var(--accent-border);
     box-shadow: 0 8px 24px rgba(217, 119, 87, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
   }
 
-  .instructor-name { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+  .instructor-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .instructor-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
 
   .instructor-handle {
     font-family: 'IBM Plex Mono', monospace;
@@ -806,6 +893,7 @@
     font-size: 22px;
     color: var(--accent);
     font-weight: 300;
+    transition: transform 0.2s;
   }
 
   details[open] summary::after { content: '−'; }
@@ -827,7 +915,11 @@
     border-bottom: none;
   }
 
-  .final-cta h2 { margin-left: auto; margin-right: auto; margin-bottom: 20px; }
+  .final-cta h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 
   .final-cta p {
     font-size: 17px;
@@ -838,7 +930,12 @@
     margin-right: auto;
   }
 
-  .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .cta-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
   .btn-primary {
     background: var(--accent);
@@ -890,9 +987,13 @@
     color: var(--beige);
     text-decoration: none;
     border-bottom: 1px solid var(--line-strong);
+    transition: color 0.2s, border-color 0.2s;
   }
 
-  .cta-fallback a:hover { color: var(--accent); border-color: var(--accent); }
+  .cta-fallback a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
 
   /* ============ FOOTER ============ */
   footer {
@@ -1041,22 +1142,30 @@
       <div class="pain-card">
         <span class="pain-icon">⏳</span>
         <div class="pain-title">Mất 3-5 tiếng làm 1 deck</div>
-        <div class="pain-text">Cấu trúc slide, tìm ý, viết nội dung, format — tất cả thủ công. Xong rồi vẫn chưa có kịch bản nói.</div>
+        <div class="pain-text">
+          Cấu trúc slide, tìm ý, viết nội dung, format — tất cả thủ công. Xong rồi vẫn chưa có kịch bản nói.
+        </div>
       </div>
       <div class="pain-card">
         <span class="pain-icon">📋</span>
         <div class="pain-title">Copy-paste deck cũ cho khách mới</div>
-        <div class="pain-text">Không có thời gian customize lại cho từng khách, nên deck nào cũng giống nhau — khách cảm nhận được.</div>
+        <div class="pain-text">
+          Không có thời gian customize lại cho từng khách, nên deck nào cũng giống nhau — khách cảm nhận được.
+        </div>
       </div>
       <div class="pain-card">
         <span class="pain-icon">🎤</span>
         <div class="pain-title">Kịch bản nói không chắc</div>
-        <div class="pain-text">Slide xong rồi nhưng nói gì ở từng slide vẫn phụ thuộc vào ứng biến — đôi khi vào phòng họp mới nghĩ.</div>
+        <div class="pain-text">
+          Slide xong rồi nhưng nói gì ở từng slide vẫn phụ thuộc vào ứng biến — đôi khi vào phòng họp mới nghĩ.
+        </div>
       </div>
       <div class="pain-card">
         <span class="pain-icon">🔄</span>
         <div class="pain-title">Mỗi sản phẩm/dịch vụ làm lại từ đầu</div>
-        <div class="pain-text">Không có hệ thống, không có template — mỗi lần pitch lại tốn công như lần đầu, không tích lũy được.</div>
+        <div class="pain-text">
+          Không có hệ thống, không có template — mỗi lần pitch lại tốn công như lần đầu, không tích lũy được.
+        </div>
       </div>
     </div>
   </div>
@@ -1065,9 +1174,11 @@
 <!-- ============ BEFORE / AFTER ============ -->
 <section>
   <div class="container">
-    <span class="section-label">Trước &amp; Sau</span>
+    <span class="section-label">Trước & Sau</span>
     <h2>Khóa học thay đổi gì trong quy trình làm deck của bạn</h2>
-    <p class="section-lead">Không học lý thuyết — học đúng workflow thực tế để bạn áp dụng được ngay từ tuần sau.</p>
+    <p class="section-lead">
+      Không học lý thuyết — học đúng workflow thực tế để bạn áp dụng được ngay từ tuần sau.
+    </p>
     <div class="ba-grid">
       <div class="ba-card ba-before">
         <span class="ba-label">Trước khóa học</span>
@@ -1100,14 +1211,21 @@
   <div class="container">
     <span class="section-label">Giáo trình</span>
     <h2>3 buổi — từ "Claude là gì" đến deck sales hoàn chỉnh</h2>
-    <p class="section-lead">Thiết kế cho người bán B2B chưa từng dùng Claude. Mỗi buổi có 1 deliverable cụ thể — không học xong tay không.</p>
+    <p class="section-lead">
+      Thiết kế cho người bán B2B chưa từng dùng Claude. Mỗi buổi có 1 deliverable cụ thể
+      — không học xong tay không.
+    </p>
 
     <div class="session">
       <div class="session-num">01</div>
       <div class="session-content">
         <span class="session-tag">Buổi 1 · Nền tảng</span>
         <div class="session-title">Setup Claude + Viết prompt cho người bán hàng</div>
-        <div class="session-desc">Bắt đầu từ con số 0 — đăng ký tài khoản, hiểu Claude khác gì ChatGPT, và học cách viết prompt sao cho Claude trả lời đúng ý ngay lần đầu. Demo trực tiếp trên nghiệp vụ bán giải pháp công nghệ của bạn.</div>
+        <div class="session-desc">
+          Bắt đầu từ con số 0 — đăng ký tài khoản, hiểu Claude khác gì ChatGPT,
+          và học cách viết prompt sao cho Claude trả lời đúng ý ngay lần đầu.
+          Demo trực tiếp trên nghiệp vụ bán giải pháp công nghệ của bạn.
+        </div>
         <ul class="session-topics">
           <li>Đăng ký Claude tại Việt Nam — tránh các lỗi ban region thường gặp</li>
           <li>5 nguyên tắc prompt cho người bán hàng (không phải kỹ thuật)</li>
@@ -1126,7 +1244,10 @@
       <div class="session-content">
         <span class="session-tag">Buổi 2 · Core skill</span>
         <div class="session-title">Tạo bộ deck sales B2B hoàn chỉnh + kịch bản nói từng slide</div>
-        <div class="session-desc">Buổi quan trọng nhất — demo toàn bộ quy trình từ brief đến deck hoàn chỉnh. Làm trực tiếp với sản phẩm/dịch vụ bạn đang bán, không phải ví dụ chung chung.</div>
+        <div class="session-desc">
+          Buổi quan trọng nhất — demo toàn bộ quy trình từ brief đến deck hoàn chỉnh.
+          Làm trực tiếp với sản phẩm/dịch vụ bạn đang bán, không phải ví dụ chung chung.
+        </div>
         <ul class="session-topics">
           <li>Prompt để Claude tạo cấu trúc deck 10-12 slide cho B2B tech</li>
           <li>Viết nội dung từng slide: vấn đề → giải pháp → case study → pricing → next step</li>
@@ -1146,7 +1267,10 @@
       <div class="session-content">
         <span class="session-tag">Buổi 3 · Template hóa</span>
         <div class="session-title">Xây bộ prompt template — tự làm deck mới trong 30 phút</div>
-        <div class="session-desc">Buổi này biến kỹ năng thành hệ thống. Bạn sẽ có bộ prompt có thể tái sử dụng cho mọi deck sau — chỉ cần thay thông tin khách là Claude lo phần còn lại.</div>
+        <div class="session-desc">
+          Buổi này biến kỹ năng thành hệ thống. Bạn sẽ có bộ prompt có thể tái sử dụng
+          cho mọi deck sau — chỉ cần thay thông tin khách là Claude lo phần còn lại.
+        </div>
         <ul class="session-topics">
           <li>Tạo "master prompt" cho deck sales — tái sử dụng cho mọi sản phẩm</li>
           <li>Cách customize deck cho từng loại khách B2B trong 10 phút</li>
@@ -1172,22 +1296,34 @@
       <div class="why-card">
         <div class="why-num">01</div>
         <div class="why-title">Đúng nghiệp vụ của bạn</div>
-        <div class="why-text">Demo trực tiếp trên sản phẩm bạn đang bán — không phải ví dụ chung chung. Cuối buổi 2 bạn có deck thật, không phải bài tập giả.</div>
+        <div class="why-text">
+          Demo trực tiếp trên sản phẩm bạn đang bán — không phải ví dụ chung chung.
+          Cuối buổi 2 bạn có deck thật, không phải bài tập giả.
+        </div>
       </div>
       <div class="why-card">
         <div class="why-num">02</div>
         <div class="why-title">1:1 thật sự</div>
-        <div class="why-text">Chỉ có bạn và giảng viên trên Zoom. Hỏi gì trả lời ngay, không bị cuốn theo tốc độ của nhóm lớn.</div>
+        <div class="why-text">
+          Chỉ có bạn và giảng viên trên Zoom. Hỏi gì trả lời ngay,
+          không bị cuốn theo tốc độ của nhóm lớn.
+        </div>
       </div>
       <div class="why-card">
         <div class="why-num">03</div>
         <div class="why-title">3 buổi đủ dùng</div>
-        <div class="why-text">Khóa này chỉ dạy đúng thứ bạn cần: làm slide + kịch bản. Không nhồi nhét kiến thức thừa, không mất thêm thời gian.</div>
+        <div class="why-text">
+          Khóa này chỉ dạy đúng thứ bạn cần: làm slide + kịch bản.
+          Không nhồi nhét kiến thức thừa, không mất thêm thời gian.
+        </div>
       </div>
       <div class="why-card">
         <div class="why-num">04</div>
         <div class="why-title">Hoàn tiền sau buổi 1</div>
-        <div class="why-text">Không hài lòng sau buổi đầu? Hoàn 100% trong 24h, không hỏi lý do. Rủi ro thuộc về giảng viên.</div>
+        <div class="why-text">
+          Không hài lòng sau buổi đầu? Hoàn 100% trong 24h, không hỏi lý do.
+          Rủi ro thuộc về giảng viên.
+        </div>
       </div>
     </div>
   </div>
@@ -1198,7 +1334,9 @@
   <div class="container">
     <span class="section-label">Học phí</span>
     <h2>Một gói. Đúng thứ bạn cần.</h2>
-    <p class="section-lead">Không gói Basic/Premium rườm rà — 3 buổi dạy đúng những gì một người bán B2B cần để tự làm deck + script từ hôm nay.</p>
+    <p class="section-lead">
+      Không gói Basic/Premium rườm rà — 3 buổi dạy đúng những gì một người bán B2B cần để tự làm deck + script từ hôm nay.
+    </p>
 
     <div class="pricing-single">
       <div class="tier">
@@ -1253,19 +1391,31 @@
     <div class="perks-grid">
       <div class="perk">
         <div class="perk-name">Hoàn tiền 100%</div>
-        <div class="perk-text">Học buổi 1, không hài lòng → <strong>hoàn 100% trong 24h</strong>, không hỏi lý do. Rủi ro thuộc về giảng viên, không phải bạn.</div>
+        <div class="perk-text">
+          Học buổi 1, không hài lòng → <strong>hoàn 100% trong 24h</strong>,
+          không hỏi lý do. Rủi ro thuộc về giảng viên, không phải bạn.
+        </div>
       </div>
       <div class="perk">
         <div class="perk-name">Lịch linh hoạt</div>
-        <div class="perk-text">Tối hoặc cuối tuần đều được. Bạn và giảng viên tự thống nhất lịch — <strong>không bị ép vào khung giờ cố định</strong>.</div>
+        <div class="perk-text">
+          Tối hoặc cuối tuần đều được. Bạn và giảng viên tự thống nhất lịch —
+          <strong>không bị ép vào khung giờ cố định</strong>.
+        </div>
       </div>
       <div class="perk">
         <div class="perk-name">Demo case thật</div>
-        <div class="perk-text">Mọi demo đều làm trực tiếp với <strong>sản phẩm/dịch vụ bạn đang bán</strong>, không phải ví dụ giả hay case study chung chung.</div>
+        <div class="perk-text">
+          Mọi demo đều làm trực tiếp với <strong>sản phẩm/dịch vụ bạn đang bán</strong>,
+          không phải ví dụ giả hay case study chung chung.
+        </div>
       </div>
       <div class="perk">
         <div class="perk-name">Không cần nền kỹ thuật</div>
-        <div class="perk-text">Khóa này dạy <strong>người bán hàng</strong>, không phải kỹ sư. Chưa dùng AI bao giờ cũng học được ngay từ buổi 1.</div>
+        <div class="perk-text">
+          Khóa này dạy <strong>người bán hàng</strong>, không phải kỹ sư.
+          Chưa dùng AI bao giờ cũng học được ngay từ buổi 1.
+        </div>
       </div>
     </div>
   </div>
@@ -1278,7 +1428,9 @@
     <h2>Ai dạy khóa này?</h2>
     <div class="instructor">
       <div class="instructor-card">
-        <div class="instructor-avatar">🦊</div>
+        <div class="instructor-avatar">
+          <img src="assets/images/avatar.png" alt="Nguyên Lynx — giảng viên khóa Claude 1:1 Sales B2B">
+        </div>
         <div class="instructor-name">Nguyên Lynx</div>
         <div class="instructor-handle">@aiwithlynx</div>
         <div class="meta-item" style="border-top: 1px solid var(--line); padding-top: 16px;">
@@ -1287,9 +1439,24 @@
         </div>
       </div>
       <div class="instructor-bio">
-        <p>Mình là Nguyên Lynx — indie creator đang vận hành kênh TikTok <strong style="color: var(--accent);">@aiwithlynx</strong> chuyên về AI cho người Việt. Mình đang chạy series 30 tập "Khóa Claude 101" miễn phí trên TikTok, và khóa 1:1 này là phiên bản kèm cặp sâu hơn — đi vào đúng nghiệp vụ thật của bạn.</p>
-        <p>Mình không phải kỹ sư AI. Mình dùng Claude hằng ngày cho công việc thật: viết content, lên kế hoạch, soạn proposal, build sản phẩm. Mình hiểu góc độ của người dùng thực tế — không hàn lâm, không nhồi thuật ngữ, demo thẳng vào việc bạn đang làm.</p>
-        <p>Khóa Sales B2B này được thiết kế sau khi mình làm việc thực tế với người bán giải pháp công nghệ — hiểu rõ bottleneck là ở khâu tạo deck và chuẩn bị kịch bản, không phải thiếu kiến thức về sản phẩm.</p>
+        <p>
+          Mình là Nguyên Lynx — indie creator đang vận hành kênh TikTok
+          <strong style="color: var(--accent);">@aiwithlynx</strong> chuyên
+          về AI cho người Việt. Mình đang chạy series 30 tập "Khóa Claude
+          101" miễn phí trên TikTok, và khóa 1:1 này là phiên bản kèm cặp
+          sâu hơn — đi vào đúng nghiệp vụ thật của bạn.
+        </p>
+        <p>
+          Mình không phải kỹ sư AI. Mình dùng Claude hằng ngày cho công việc
+          thật: viết content, lên kế hoạch, soạn proposal, build sản phẩm.
+          Mình hiểu góc độ của người dùng thực tế — không hàn lâm, không
+          nhồi thuật ngữ, demo thẳng vào việc bạn đang làm.
+        </p>
+        <p>
+          Khóa Sales B2B này được thiết kế sau khi mình làm việc thực tế với
+          người bán giải pháp công nghệ — hiểu rõ bottleneck là ở khâu tạo
+          deck và chuẩn bị kịch bản, không phải thiếu kiến thức về sản phẩm.
+        </p>
       </div>
     </div>
   </div>
@@ -1333,7 +1500,9 @@
 <section class="final-cta" id="dang-ky">
   <div class="container">
     <h2>Sẵn sàng làm deck sales trong 30 phút thay vì 5 tiếng?</h2>
-    <p>Nhắn Zalo để đặt lịch buổi 1. Không hài lòng → hoàn 100%, không hỏi lý do.</p>
+    <p>
+      Nhắn Zalo để đặt lịch buổi 1. Không hài lòng → hoàn 100%, không hỏi lý do.
+    </p>
     <div class="cta-row">
       <a href="https://zalo.me/0912205001" target="_blank" rel="noopener" class="btn-primary">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -1353,7 +1522,9 @@
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="container">
-    <p>© 2026 Nguyên Lynx · <a href="https://www.tiktok.com/@aiwithlynx">@aiwithlynx</a> · info@lynxsolution.vn</p>
+    <p>
+      © 2026 Nguyên Lynx · <a href="https://www.tiktok.com/@aiwithlynx">@aiwithlynx</a> · info@lynxsolution.vn
+    </p>
   </div>
 </footer>
 
